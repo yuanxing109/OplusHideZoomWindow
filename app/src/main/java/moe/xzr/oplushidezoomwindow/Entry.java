@@ -37,6 +37,7 @@ public class Entry implements IXposedHookLoadPackage {
 
                         if (isZoomWindow ||
                                 // Edge panel
+                                "tornaco.apps.shortx".equals(owningPackage) ||
                                 "com.oplus.appplatform".equals(owningPackage) ||
                                 // Edge handle
                                 "OplusOSZoomFloatHandleView".equals(typeName) ||
